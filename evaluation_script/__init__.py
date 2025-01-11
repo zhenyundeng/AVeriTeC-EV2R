@@ -36,6 +36,7 @@ def install_local_package(folder_name):
 install("scipy")
 install("nltk")
 install("numpy")
+install("torch")
 
 # install("scipy==1.10.0")
 # install("nltk==3.7")
@@ -45,6 +46,7 @@ install("numpy")
 # install("requests==2.25.1")
 #
 # install_local_package("package_folder_name")
+
 
 
 from .main import evaluate
