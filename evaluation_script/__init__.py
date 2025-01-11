@@ -47,5 +47,4 @@ install("numpy")
 # install_local_package("package_folder_name")
 
 
-import .properties
 from .main import evaluate
