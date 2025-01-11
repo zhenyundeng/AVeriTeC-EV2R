@@ -6,7 +6,7 @@ from nltk import word_tokenize
 import tqdm
 import time
 import copy
-import properties
+import evaluation_script.properties as properties
 import google.generativeai as genai
 
 def pairwise_meteor(candidate, reference):
