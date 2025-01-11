@@ -42,7 +42,7 @@ class EV2REvaluator:
     _CORRELATION_OUPUT_FILE = "correlation_{}_{}.csv".format(_PROMPT_TYPE.value, _API.value)
     prompt_type = properties.PromptTypes("atomic_reference_prec_recall")
     MAX_RETRIES = 10
-    ev2r_reporting_levels = [0.46]  # [0.44, 0.46, 0.48]
+    ev2r_reporting_levels = [0.44]  # [0.44, 0.46, 0.48]
     # LLM
     MAX_TOKENS = 3000
     TEMPERATURE = 0
@@ -486,15 +486,15 @@ def evaluate(test_annotation_file, user_submission_file, phase_codename, **kwarg
     return output
 
 
-if __name__ == "__main__":
-    # filename = 'test'   # test, dev
-    # test_annotation_file = "annotations/averitec_{}_gold.json".format(filename)
-    # user_submission_file = "HerO_{}_pred.json".format(filename)       # "yulong_{}_pred.json"
+# if __name__ == "__main__":
+#     # filename = 'test'   # test, dev
+#     # test_annotation_file = "annotations/averitec_{}_gold.json".format(filename)
+#     # user_submission_file = "HerO_{}_pred.json".format(filename)       # "yulong_{}_pred.json"
 
-    filename = 'dev'   # test, dev
-    test_annotation_file = "annotations/averitec_{}_gold.json".format(filename)
-    user_submission_file = "rami_50s_{}_pred.json".format(filename)       # "yulong_{}_pred.json"
+#     filename = 'dev'   # test, dev
+#     test_annotation_file = "annotations/averitec_{}_gold.json".format(filename)
+#     user_submission_file = "rami_50s_{}_pred.json".format(filename)       # "yulong_{}_pred.json"
 
-    evaluate(test_annotation_file, user_submission_file, filename)
-    print("hello")
+#     evaluate(test_annotation_file, user_submission_file, filename)
+#     print("hello")
 
