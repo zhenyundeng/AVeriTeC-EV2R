@@ -4,9 +4,9 @@ from enum import Enum
 from typing import List
 from typing import Optional, Union
 
-import torch
+# import torch
 from aenum import MultiValueEnum
-from torch.utils.data import DataLoader
+# from torch.utils.data import DataLoader
 
 
 class TestType(Enum):
